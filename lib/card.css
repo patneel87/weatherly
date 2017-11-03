@@ -1,0 +1,42 @@
+.hour-cards {
+	width: 158px;
+	text-align: center;
+}
+
+.hour-cards h1 {
+	margin-bottom: 0;
+	font-size: 20px;
+	opacity: .3;
+}
+
+.hour-cards h2 {
+	font-size: 80px;
+	margin: 0;
+	opacity: .7;
+}
+
+.hour-cards h3 {
+	font-size: 20px;
+	margin: 0;
+	opacity: .3;
+}
+
+.card-container:first-child {
+	width: 220px;
+	position: relative;
+}
+
+.card-container:first-child h1 {
+	opacity: 9;
+	font-size: 30px;
+}
+
+.card-container:first-child h2 {
+	opacity: .9;
+	font-size: 110px;
+}
+
+.card-container:first-child h3 {
+	opacity: .9;
+	font-size: 30px;
+}
