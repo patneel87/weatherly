@@ -1,0 +1,17 @@
+.current-weather {
+	margin-top: 40px;
+}
+
+.current-weather h1 {
+	font-size: 80px;
+	text-align: center;
+	opacity: .85;
+	margin: 20px 10px 10px;
+}
+
+.current-weather h3 {
+	font-size: 20px;
+	text-align: center;
+	opacity: .3;
+	margin: 8px;
+}

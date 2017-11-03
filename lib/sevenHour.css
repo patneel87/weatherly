@@ -1,0 +1,12 @@
+.seven-hour {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 1106px;
+	margin: 28px auto 40px;
+}
+
+.seven-hour:first-child h1 {
+	opacity: 1;
+}
