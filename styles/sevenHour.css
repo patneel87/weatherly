@@ -3,8 +3,8 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	width: 1106px;
-	margin: 28px auto 40px;
+	width: 1000px;
+	margin: 28px auto 0px;
 }
 
 .seven-hour:first-child h1 {
