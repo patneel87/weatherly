@@ -1,0 +1,92 @@
+.search-box {
+	background-color: rgba(255,255,255,.15);
+	border-bottom: 8px solid rgba(255,255,255,.1);
+	max-width: 634px;
+	height: 60px;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: column;
+	
+	align-items: center;
+	
+	padding: 0 10px;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+input {
+	width:80%;
+	height: 100%;
+	border: none;
+	background: transparent;
+	font-size: 34px;
+	color: rgba(0,0,0,.6);
+	text-align: center;
+}
+
+input:focus {
+	outline: none;
+}
+
+input::placeholder {
+	font-size: 34px;
+	color: rgba(0,0,0,.6);
+	text-align: center;
+}
+
+.spacer {
+	width: 50px;
+	height: 50px;
+}
+
+.submit {
+	width: 41px;
+	height: 41px;
+	background: none;
+	background-image: url('assets/mag-glass.svg');
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	margin-left: auto;
+	outline: none;
+}
+
+ul {
+	position: absolute;
+  top: 64px;
+  width: 634px;
+  text-align: center;
+
+  background: linear-gradient(to bottom, rgba(0,0,0,0.96) 0%,rgba(0,0,0,0.8) 100%);
+  z-index: 1;
+}
+
+li {
+	font-size: 34px;
+	list-style-type: none;
+	width: 547px;
+	margin: 6px 0 4px;
+	cursor: pointer;
+	color: rgba(255,255,255,.8);
+}
+
+li:hover {
+	color: rgba(255,255,255,1);
+}
+
+@media and screen (max-width: 499px) {
+
+}
+
+
+
+
+
+
+
+
