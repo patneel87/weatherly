@@ -47,7 +47,7 @@ input::placeholder {
 	width: 41px;
 	height: 41px;
 	background: none;
-	background-image: url('assets/mag-glass.svg');
+	background-image: url('../lib/assets/mag-glass.svg');
 	background-repeat: no-repeat;
 	border: none;
 	cursor: pointer;

@@ -57,6 +57,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "@patneel87/complete-me": "git+https://github.com/patneel87/complete-me.git"
+    "@patneel87/complete-me": "git+https://github.com/patneel87/complete-me.git",
+    "react-fontawesome": "^1.6.1"
   }
 }
