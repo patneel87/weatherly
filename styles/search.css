@@ -5,6 +5,7 @@
 	height: 60px;
 	margin: 20px auto;
 	display: flex;
+	flex-direction: column;
 	
 	align-items: center;
 	
@@ -55,6 +56,37 @@ input::placeholder {
 	outline: none;
 }
 
+ul {
+	position: absolute;
+  top: 64px;
+  width: 634px;
+  text-align: center;
+
+  background: linear-gradient(to bottom, rgba(0,0,0,0.96) 0%,rgba(0,0,0,0.8) 100%);
+  z-index: 1;
+}
+
+li {
+	font-size: 34px;
+	list-style-type: none;
+	width: 547px;
+	margin: 6px 0 4px;
+	cursor: pointer;
+	color: rgba(255,255,255,.8);
+}
+
+li:hover {
+	color: rgba(255,255,255,1);
+}
+
 @media and screen (max-width: 499px) {
 
 }
+
+
+
+
+
+
+
+
