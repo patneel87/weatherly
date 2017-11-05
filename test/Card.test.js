@@ -5,12 +5,19 @@ import Card from '../lib/Card';
 describe('Card', () => {
 
   it('should be defined', () => {
-    const card = shallow(<Card />);
-
+    const card = shallow(<Card temp="78"
+                               high="90"
+                               low="15"
+                               day="Monday" />);
     expect(card).toBeDefined();
   });
 
-  
+  it('should have a class name ', () => {
+    const card = shallow(<Card className="card-container" />)
+
+    expect(card.find('.card-container').length).toEqual(1);
+  })
+
   it('should recieve props', () => {
     const card = shallow(<Card temp="78"
                                high="90"
