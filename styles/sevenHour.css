@@ -10,3 +10,10 @@
 .seven-hour:first-child h1 {
 	opacity: 1;
 }
+
+@media screen and (max-width: 1120px) {
+	.seven-hour {
+		flex-direction: column;
+		width: 100%;
+	}
+}
