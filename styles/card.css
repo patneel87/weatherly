@@ -42,9 +42,9 @@
 
 .day-cards {
 	background-color: #343d46;
-	margin: 7px 15px;
+	margin: 7px 7px;
 	text-align: center;
-	width: 140px;
+	width: 130px;
 
 }
 
@@ -78,7 +78,7 @@ h3.day-cond {
 	opacity: .2;
 }
 
-i {
+i{
 	font-size: 35px;
 	margin-top: 5px;
 }
