@@ -3,27 +3,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: auto;
-  padding-left: 70px;
-  width: 950px;
 }
 
-.ten-day-break {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
-  width: 100%;
-}
 
-h4 {
-  margin: 0px;
-}
-
-.line-break {
-  border: solid white 2px;
-  width: 60%;
-  height: 1px;
-  margin-top: 8px;
-  border-radius: 3px;
-}
 
 

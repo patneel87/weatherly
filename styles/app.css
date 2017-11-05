@@ -18,9 +18,28 @@ body {
   margin-right: 22px;
 }
 
+
+h4 {
+  margin: 0px;
+}
+
+.line-break {
+  border: solid white 2px;
+  width: 60%;
+  height: 1px;
+  /*margin-top: 8px;
+  border-radius: 3px;*/
+}
+.ten-day-break {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0px;
+  width: 100%;
+}
+
 @media screen and (max-width: 1120px) {
-	.logo {
-		position: inherit;
+  .logo {
+    position: inherit;
 		display: block;
 		margin: 12px auto -10px;
 	}
