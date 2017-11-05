@@ -1,0 +1,25 @@
+.popular-cities {
+	width: 300px;
+	margin: auto;
+}
+
+.popular-cities img {
+	width: 50px;
+	margin-left: 20px;
+}
+
+.popular-cities a {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	cursor: pointer;
+}
+.popular-cities h2 {
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+
+.popular-cities h5 {
+	font-size: 20px;
+	margin: 17px 0 18px 14px;
+}
