@@ -3,8 +3,25 @@
 }
 
 body {
-	background-color: #151820;
+	background: url("../lib/assets/night-bg.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 	font-family: 'Questrial', sans-serif;
 	color: #fff;
 }
 
+.logo {
+  width: 117px;
+  position: absolute;
+  right: 10px;
+  margin-right: 22px;
+}
+
+@media screen and (max-width: 1120px) {
+	.logo {
+		position: inherit;
+		display: block;
+		margin: 12px auto -10px;
+	}
+}
