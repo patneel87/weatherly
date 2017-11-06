@@ -24,7 +24,7 @@
     ],
     "curly": "error",
     "eqeqeq": ["error", "always"],
-    "getter-return": ["error", { "allowImplicit": true }],
+    // "getter-return": ["error", { "allowImplicit": true }],
     "indent": ["warn", 2],
     "key-spacing": [
       "error", {
@@ -44,7 +44,7 @@
     ],
     "max-len": [
       "error",
-      80
+      100
     ],
     "new-cap": [
       "error", {
@@ -55,11 +55,11 @@
       "error",
       "always"
     ],
-    "no-template-curly-in-string": "error",
-    "object-shorthand": [
-      "error",
-      "always"
-    ],
+    // "no-template-curly-in-string": "error",
+    // "object-shorthand": [
+    //   "error",
+    //   "always"
+    // ],
     "semi": ["error", "always"],
     "semi-spacing": [
       "error", {
