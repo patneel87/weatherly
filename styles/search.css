@@ -79,10 +79,11 @@ li:hover {
 	color: rgba(255,255,255,1);
 }
 
-@media and screen (max-width: 499px) {
-
+@media screen and (max-width: 1120px) {
+	ul {
+		top: 113px;
+	}
 }
-
 
 
 
