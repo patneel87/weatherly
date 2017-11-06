@@ -2,19 +2,18 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import SevenHour from '../lib/SevenHour';
 
-let mockData = {
-   cityState: "Denver, CO",
-   timeDay: "10am",
-   weatherSummary: "cloudy",
-   todayHighLow: "48" 
-}
+let mockData = [
+   "Denver, CO",
+   "10am",
+   "cloudy",
+   "48" 
+]
 
 describe('SevenHour', () => {
 
-   it.skip('should be defined', () => {
-    const sevenHour = mount(<SevenHour sevenHour={mockData} />);
-
-    expect(sevenHour).toBeDefined();
+   it('should be defined', () => {
+    const wrapper = shallow(<SevenHour sevenHour={mockData} />);
+    expect(wrapper).toBeDefined();
   });
 
   it.skip('should recieve props', () => {

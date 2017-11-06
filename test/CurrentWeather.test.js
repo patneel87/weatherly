@@ -19,9 +19,9 @@ describe('CurrentWeather', () => {
   });
 
   it.skip('should have a class name', () => {
-    const currentWeather = mount(<CurrentWeather className="current-weather" />);
-
-    expect(currentWeather.find('.current-weather').length).toEqual(1);
+    
+    const currentWeather = shallow(<CurrentWeather className="current-weather" />);
+    expect(currentWeather).toBeDefined();
   })
 
   it('should recieve props', () => {
@@ -33,9 +33,8 @@ describe('CurrentWeather', () => {
     
   });
 
-  it.skip('should render correctly', () => {
-    const currentWeather = mount(<CureentWeather currentWeather={mockData} />)
-    console.log(currentWeather.debug())
+  it('should render correctly', () => {
+    const currentWeather = mount(<CurrentWeather currentWeather={mockData} />)
     expect(currentWeather.find('h1').length).toEqual(1);
     expect(currentWeather.find('h3').length).toEqual(3);
   });

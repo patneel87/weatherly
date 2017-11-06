@@ -10,13 +10,15 @@ describe('Card', () => {
                                low="15"
                                day="Monday" />);
     expect(card).toBeDefined();
+    
   });
 
   it('should have a class name ', () => {
     const card = shallow(<Card className="card-container" />)
 
     expect(card.find('.card-container').length).toEqual(1);
-  })
+
+  });
 
   it('should recieve props', () => {
     const card = shallow(<Card temp="78"
@@ -27,6 +29,7 @@ describe('Card', () => {
     expect(card.instance().props.high).toEqual("90")
     expect(card.instance().props.low).toEqual("15")
     expect(card.instance().props.day).toEqual("Monday")
-  })
-  
+
+  });
+
 })
