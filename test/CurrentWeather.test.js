@@ -17,10 +17,10 @@ describe('CurrentWeather', () => {
     expect(currentWeather).toBeDefined();
   });
 
-  it.skip('should have a class name', () => {
+  it('should have a class name', () => {
     
     const currentWeather = shallow(<CurrentWeather className="current-weather" />);
-    expect(currentWeather).toBeDefined();
+    expect(currentWeather.find('.current-weather').length).toEqual(1);
   })
 
   it('should recieve props', () => {
