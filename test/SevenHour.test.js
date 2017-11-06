@@ -25,6 +25,12 @@ describe('SevenHour', () => {
     expect(sevenHour.props().sevenHour.todayHighLow).toEqual("48")
     
   })
+
+   it.skip('should render passed in index', () => {
+    const card = shallow(<SevenHour index={1} />);
+    
+    expect(card.find('.index').text() ).toEqual('1');
+  });
   
 })
 

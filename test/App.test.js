@@ -13,7 +13,12 @@ global.fetch = () => {
 }
 
 
+
+
 describe('App', () => {
+
+   
+
   it('should render only the search component and welcome component if there is no value in local storage', () => {
     const app = mount(<App />);
 
@@ -28,4 +33,5 @@ describe('App', () => {
     // expect(wrapper.find('TenDayForecast').length).toEqual(1);
 
   })
+
 })
