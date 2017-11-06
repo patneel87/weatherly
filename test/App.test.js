@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import App from '../lib/App';
 import LocalStorage from './__test-helpers__/storageMock';
-import mockData from '../lib/MockData';
+import mockData from './__test-helpers__/MockData';
 
 global.fetch = () => {
 	const l = new Promise((res, rej) => {
@@ -16,6 +16,11 @@ global.fetch = () => {
 }
 
 describe('App', () => {
+ 	it('should be defined', () => {
+  	const wrapper = shallow(<App />)
+  	expect(wrapper).toBeDefined();
+ 	})
+
   it('should render search and welcome if there is NO value in local storage', () => {
     localStorage.clear();
     const wrapper = shallow(<App />);
@@ -34,20 +39,10 @@ describe('App', () => {
     expect(wrapper.find('TenDay').length).toEqual(0);
   })
 
-
-
-   it('should be defined', () => {
-    const wrapper = shallow(<App />)
-    expect(wrapper).toBeDefined();
-   })
-
- 
-
 	it('should render search, current weather, seven hour forecast, and ten day forecast if there is a value in local storage', () => {
     localStorage.setItem('city', 'Albuquerque');
     localStorage.setItem('state', 'NM');
     const wrapper = shallow(<App />);
-
 
     expect(wrapper.find('Search').length).toEqual(1);
     expect(wrapper.find('CurrentWeather').length).toEqual(1);
@@ -63,6 +58,4 @@ describe('App', () => {
 
     expect(wrapper.find('Welcome').length).toEqual(0);
   })
-
-
 })
