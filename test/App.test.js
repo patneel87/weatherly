@@ -2,8 +2,7 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import App from '../lib/App';
 import LocalStorage from './__test-helpers__/storageMock';
-import './__test-helpers__/mockData.js';
-
+import mockData from '../lib/MockData';
 
 global.fetch = () => {
 
@@ -13,19 +12,19 @@ global.fetch = () => {
 }
 
 
-
-
 describe('App', () => {
 
-   
+   it('should be defined', () => {
+    const wrapper = shallow(<App />)
+    expect(wrapper).toBeDefined();
+   })
 
-  it('should render only the search component and welcome component if there is no value in local storage', () => {
+  it.skip('should render only the search component and welcome component if there is no value in local storage', () => {
     const app = mount(<App />);
 
     
 
     global.localStorage = { localStorage: {city: 'Albuquerque', state: 'NM'}}
-    console.log(global.localStorage)
 
     // expect(wrapper.find('Search').length).toEqual(1);
     // expect(wrapper.find('CurrentWeather').length).toEqual(1);
