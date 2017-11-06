@@ -85,6 +85,15 @@ li:hover {
 	}
 }
 
+@media screen and (max-width: 400px) {
+	input::placeholder {
+		font-size: 28px;
+	}
+	input {
+		font-size: 28px;
+	}
+}
+
 
 
 
