@@ -35,16 +35,26 @@ describe('App', () => {
   })
 
 
+
+   it('should be defined', () => {
+    const wrapper = shallow(<App />)
+    expect(wrapper).toBeDefined();
+   })
+
+ 
+
 	it('should render search, current weather, seven hour forecast, and ten day forecast if there is a value in local storage', () => {
     localStorage.setItem('city', 'Albuquerque');
     localStorage.setItem('state', 'NM');
     const wrapper = shallow(<App />);
+
 
     expect(wrapper.find('Search').length).toEqual(1);
     expect(wrapper.find('CurrentWeather').length).toEqual(1);
     expect(wrapper.find('SevenHour').length).toEqual(1);
     expect(wrapper.find('TenDay').length).toEqual(1);
   })
+
 
 	it('should not render welcome if there is a value in local storage', () => {
     localStorage.setItem('city', 'Albuquerque');
