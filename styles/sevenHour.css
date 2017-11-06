@@ -4,7 +4,7 @@
 	align-items: center;
 	justify-content: center;
 	width: 1000px;
-	margin: 28px auto 0px;
+	margin: 8px auto 0px;
 }
 
 .seven-hour:first-child h1 {
@@ -15,5 +15,11 @@
 	.seven-hour {
 		flex-direction: column;
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 719px) {
+	.seven-hour {
+		align-items: left;
 	}
 }

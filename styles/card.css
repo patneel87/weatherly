@@ -21,6 +21,13 @@
 	opacity: .3;
 }
 
+.hour-cards h6 {
+	font-size: 60px;
+	margin: 0 0 13px;
+	opacity: .7;
+
+}
+
 .card-container:first-child {
 	width: 220px;
 }
@@ -40,20 +47,23 @@
 	font-size: 30px;
 }
 
+.card-container:first-child h6 {
+	opacity: .9;
+	font-size: 80px;
+}
+
 .day-cards {
-	background-color: #343d46;
+	background-color: rgba(255,255,255,.3);
 	margin: 7px 7px;
 	text-align: center;
 	width: 130px;
-
+	height: 199px;
 }
 
 h3.ten-day-day  {
-	background-color: gray;
-	font-size: 18px;
+	background-color: rgba(0,174,239, .5);
 	margin: 0px;
 	padding: 10px 0px;
-
 }
 
 .high-low {
@@ -67,7 +77,8 @@ h3.ten-day-day  {
 
 h3.day-cond {
 	margin: 0px;
-	padding: 20px 0px;
+	padding: 4px 0px;
+	font-size: 16px;
 }
 .high-low h1{
 	margin: 0 4px;
@@ -75,12 +86,12 @@ h3.day-cond {
 }
 
 .low-span {
-	opacity: .2;
+	opacity: .4;
 }
 
 i{
 	font-size: 35px;
-	margin-top: 5px;
+	margin-top: 19px;
 }
 
 @media screen and (max-width: 1120px) {
@@ -108,6 +119,11 @@ i{
 		margin: 0;
 	}
 
+	.hour-cards h6 {
+		font-size: 30px;
+		margin: 10px 10px 0 0;
+	}
+
 	.card-container:first-child {
 		width: 100%;
 		display: flex;
@@ -129,5 +145,30 @@ i{
 		opacity: .9;
 		margin: 0;
 		font-size: 20px;
+	}
+
+	.card-container:first-child h6 {
+		margin: 10px 10px 0 0;
+	}
+}
+
+@media screen and (max-width: 719px) {
+	.card-container:first-child h6 {
+		font-size: 30px;
+	}
+	.hour-cards h3 {
+		width: initial;
+	}
+	.hour-cards h1 {
+		width: 100px;
+	}
+	.hour-cards, .card-container:first-child {
+		justify-content: left;
+	}
+}
+
+@media screen and (max-width: 419px) {
+	.hour-cards h1 {
+		width: 61px;
 	}
 }
