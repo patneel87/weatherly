@@ -14,6 +14,10 @@ class LocalStorage {
   clear() {
     this.store = {}
   }
+
+  get length () {
+    return Object.keys(this.store).length
+  }
 }
 
 global.localStorage = new LocalStorage;
