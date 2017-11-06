@@ -18,6 +18,11 @@ describe('TenDay', () => {
     const wrapper = shallow(<TenDay tenDay={mockData} />)
     expect(wrapper).toBeDefined();
 
+  });
+
+  it('should have a class name', () => {
+    const tenDay = shallow(<TenDay className="ten-day" tenDay={mockData} />);
+    expect(tenDay.find('.ten-day').length).toEqual(1);
   })
 
   it('should recieve props', () => {

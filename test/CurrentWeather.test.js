@@ -18,8 +18,7 @@ describe('CurrentWeather', () => {
   });
 
   it('should have a class name', () => {
-    
-    const currentWeather = shallow(<CurrentWeather className="current-weather" />);
+    const currentWeather = shallow(<CurrentWeather className="current-weather" currentWeather={mockData} />);
     expect(currentWeather.find('.current-weather').length).toEqual(1);
   })
 
