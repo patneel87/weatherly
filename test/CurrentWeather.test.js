@@ -14,7 +14,6 @@ describe('CurrentWeather', () => {
 
   it('should be defined', () => {
     const currentWeather = mount(<CurrentWeather currentWeather={mockData} />);
-
     expect(currentWeather).toBeDefined();
   });
 
