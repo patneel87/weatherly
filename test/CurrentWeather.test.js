@@ -33,8 +33,11 @@ describe('CurrentWeather', () => {
 
   it('should render correctly', () => {
     const currentWeather = mount(<CurrentWeather currentWeather={mockData} />)
-    expect(currentWeather.find('h1').length).toEqual(1);
-    expect(currentWeather.find('h3').length).toEqual(3);
+    expect(currentWeather.find('h1').text()).toEqual('Denver, CO');
+    expect(currentWeather.find('h3').slice(0, 1).text()).toEqual('10am');
+    expect(currentWeather.find('h3').slice(1, 2).text()).toEqual('cloudy');
+    expect(currentWeather.find('h3').slice(2, 3).text()).toEqual('48');
+
   });
 
 })

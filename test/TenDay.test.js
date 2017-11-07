@@ -27,7 +27,6 @@ describe('TenDay', () => {
 
   it('should recieve props', () => {
     const tenDay = shallow(<TenDay tenDay={mockData} />)
-    console.log(tenDay.find('Card').props().day);
     expect(tenDay.find('Card').props().day).toEqual("TODAY")
     expect(tenDay.find('Card').props().dayCond).toEqual("Chance of Rain")
     expect(tenDay.find('Card').props().dayHigh).toEqual("66")
@@ -38,10 +37,12 @@ describe('TenDay', () => {
 
   it('should render correctly', () => {
     const tenDay = mount (<TenDay tenDay={mockData} />)
-    expect(tenDay.find('Card').find('h1').length).toEqual(2);
-    expect(tenDay.find('Card').find('i').length).toEqual(1);
-    expect(tenDay.find('Card').find('h3').length).toEqual(2);
-    expect(tenDay.find('Card').find('span').length).toEqual(1);
+    expect(tenDay.find('Card').find('h1').slice(0, 1).text()).toEqual('66');
+    expect(tenDay.find('Card').find('h1').slice(1, 2).text()).toEqual('41');
+    expect(tenDay.find('Card').find('i').hasClass('wi-wu-chancerain')).toEqual(true);
+    expect(tenDay.find('Card').find('h3').slice(0, 1).text()).toEqual('TODAY');
+    expect(tenDay.find('Card').find('h3').slice(1, 2).text()).toEqual('Chance of Rain');
+    expect(tenDay.find('Card').find('span').text()).toEqual('41');
   })
   
 })
