@@ -35,4 +35,7 @@
 	#big-logo {
 		width: 80vw;
 	}
+	.popular-cities {
+		margin-bottom: calc(100vh - 529px);
+	}
 }
