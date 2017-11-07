@@ -32,4 +32,12 @@ describe('Search', () => {
 		expect(inst.suggestions.length).toEqual(5)
 	})
 
+	it('should change state on user input', () => {
+		const search = shallow(<Search />);
+		const event = {target: {value: 'de'}}
+		expect(search.state('value')).toEqual('');
+		search.find('.input-search').simulate('change', event);
+		expect(search.state('value')).toEqual(['de']);
+	})
+
 })

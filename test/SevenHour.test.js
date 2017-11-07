@@ -29,16 +29,14 @@ describe('SevenHour', () => {
     expect(sevenHour.find('Card').props().hourIcon).toEqual("chancerain")
     expect(sevenHour.find('Card').props().temp).toEqual("66")
     expect(sevenHour.find('Card').props().time).toEqual("NOW")
-    
   });
 
    it('should render correctly', () => {
     const sevenHour = mount (<SevenHour sevenHour={mockDatas} />)
-    expect(sevenHour.find('h1').length).toEqual(1);
-    expect(sevenHour.find('h2').length).toEqual(1);
-    expect(sevenHour.find('h6').length).toEqual(1);
-    expect(sevenHour.find('h3').length).toEqual(1);
-
+    expect(sevenHour.find('h1').text()).toEqual('NOW');
+    expect(sevenHour.find('h2').text()).toEqual('66');
+    expect(sevenHour.find('h6').hasClass('wi-wu-chancerain')).toEqual(true);
+    expect(sevenHour.find('h3').text()).toEqual('Chance of Rain');
    });
   
 });
