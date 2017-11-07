@@ -13,7 +13,19 @@
 	font-size: 20px;
 	text-align: center;
 	opacity: .3;
-	margin: 8px;
+	margin: 8px auto;
+}
+
+#weather-summary {
+	width: 634px;
+	margin: auto;
+}
+
+@media screen and (max-width: 644px) {
+	#weather-summary {
+		width: initial;
+		margin: 0 10px;
+	}
 }
 
 @media screen and (max-width: 440px) {
