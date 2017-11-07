@@ -30,4 +30,30 @@ describe('Card', () => {
     expect(card.instance().props.day).toEqual("Monday")
   });
 
+  it('should render a day card properly', () => {
+    const card = shallow(<Card time="9am"
+                               temp="90"
+                               hourIcon="cloudy"
+                               cond="cloudy" />);
+    expect(card.find('h1').text()).toEqual('9am');
+    expect(card.find('h2').text()).toEqual('90');
+    expect(card.find('h6').hasClass('wi-wu-cloudy')).toEqual(true);
+    expect(card.find('h3').text()).toEqual('cloudy');
+
+  })
+
+  it('should render an hour card properly', () => {
+    const card = shallow(<Card day="Monday"
+                               icon="clear"
+                               dayHigh="15"
+                               dayLow="10"
+                               dayCond="clear" />);
+    expect(card.find('h3').slice(0,1).text()).toEqual('Monday');
+    expect(card.find('i').hasClass('wi-wu-clear')).toEqual(true);
+    expect(card.find('h1').slice(0,1).text()).toEqual('15');
+    expect(card.find('h1').slice(1,2).text()).toEqual('10');
+    expect(card.find('h3').slice(1,2).text()).toEqual('clear');
+
+  })
+
 })
