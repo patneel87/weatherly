@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/turingschool-examples/react-starter-kit/issues"
   },
-  "homepage": "https://github.com/turingschool-examples/react-starter-kit",
+  "homepage": "https://github.com/patrickjneel/weatherly",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.24.1",
