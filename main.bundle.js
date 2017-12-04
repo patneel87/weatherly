@@ -30771,7 +30771,8 @@
 	      sevenHour: [],
 	      tenDay: [],
 	      city: localStorage.city,
-	      state: localStorage.state
+	      state: localStorage.state,
+	      placeholder: ''
 	    };
 	    return _this;
 	  }
@@ -30786,7 +30787,7 @@
 	    value: function fetchData(state, city) {
 	      var _this2 = this;
 	
-	      fetch('http://api.wunderground.com/api/' + _APIKey2.default + '\n      /hourly/forecast/forecast10day/geolookup/conditions/q/' + state + '\n      /' + city + '.json').then(function (data) {
+	      fetch('https://api.wunderground.com/api/' + _APIKey2.default + '\n      /hourly/forecast/forecast10day/geolookup/conditions/q/' + state + '\n      /' + city + '.json').then(function (data) {
 	        return data.json();
 	      }).then(function (data) {
 	        var apiData = (0, _cleanData2.default)(data);
