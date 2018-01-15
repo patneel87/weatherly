@@ -4,6 +4,8 @@ Weatherly is built in React, pulling data from the Weather Underground API, and 
 
 It was built by students Patrick Neel and Rob Morgan in one week.  Weatherly was our first project using an API, using React, and testing with Jest.  The styling is our own.  It is mobile-friendly and displays well on all screen sizes.
 
+See live version at https://patrickjneel.github.io/weatherly/
+
 ********
 
 ### Screenshot
