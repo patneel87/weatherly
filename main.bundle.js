@@ -31523,7 +31523,7 @@
 				_react2.default.createElement(
 					'h2',
 					null,
-					props.temp
+					props.temp.slice(0, -2)
 				),
 				_react2.default.createElement('h6', { className: 'wi wi-wu-' + props.hourIcon }),
 				_react2.default.createElement(
